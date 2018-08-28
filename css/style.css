@@ -9,7 +9,7 @@
 body { 
   font-family: Pexico-Regular;
   box-sizing: border-box; 
-  padding: 0 4rem;
+  padding: 0 7rem;
   color: #fff;
   background-color: #000;
   
@@ -22,32 +22,32 @@ body {
   margin: 0 auto; 
 }
   
-  .row:not(:last-child) {
-    margin-bottom: 8rem; 
-  }
-  
-  .row::after {
-    content: "";
-    display: table;
-    clear: both; 
-  }
-  
-  .row [class^="col-"] {
-    float: left; 
-  }
+.row:not(:last-child) {
+  margin-bottom: 8rem; 
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both; 
+}
+
+.row [class^="col-"] {
+  float: left; 
+}
     
-    .row [class^="col-"]:not(:last-child) {
-      margin-right: 6rem; 
-    }
-
-  .row .col-1-of-4 {
-    width: calc((100% - 3 * 6rem) / 4); 
+  .row [class^="col-"]:not(:last-child) {
+    margin-right: 6rem; 
   }
 
+.row .col-1-of-4 {
+  width: calc((100% - 3 * 6rem) / 4); 
+}
 
-  .row .col-3-of-4 {
-    width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); 
-  }
+
+.row .col-3-of-4 {
+  width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); 
+}
 
 /*background video*/
 
@@ -55,7 +55,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    height: 50%;
+    height: 60%;
     width: 100%;
     z-index: -1;
     object-fit: cover;
@@ -67,9 +67,14 @@ body {
   visibility: hidden;
 }
 
+.heading-update {
+  text-transform: uppercase;
+  text-shadow: -1.2px 0 #a900ff, -2.5px 0 #100aff;
+}
+
 .heading-search {
     width: 100%;
-    padding: .7rem 0;
+    padding: .7rem 0 .7rem 2.2rem;
     background-color: black;
     border-bottom: solid white .1rem;
     border-top: solid white .1rem;
@@ -77,10 +82,81 @@ body {
     border-left: none;
     margin: 1rem 0 2rem 0;
     font-size: 1rem;
+    color: #fff;
+    outline: none;
+}
+
+.heading-magnifying-glass {
+    position: absolute;
+    top: 11rem;
+    width: 1.6rem;
 }
 
 /*logo title*/
 .vv-logo {
     width: 18rem;
-    padding-bottom: 2rem
+    padding-bottom: 1.5rem
 }
+
+.video-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem 0;
+
+}
+
+.video-list::after {
+  content: "";
+  display: table;
+  clear: both; 
+}
+
+.video-title {
+  color: #fff;
+  padding-bottom: .5rem;
+  font-size: 1.4rem;
+  text-shadow: -1.2px 0 #a900ff, -2.5px 0 #100aff;
+}
+
+a {
+  float: left;
+  text-decoration: none;
+  color: #f25597;
+  margin: 0 .3rem;
+  text-shadow: -1.3px 0 #a900ff;
+}
+
+.dotted-line {
+  border:  none;
+  border-top: 1px dashed #a900ff;
+  background: none;
+  z-index: 10;
+  height: 1px;
+} 
+
+.dotted-line-2 {
+  border: none;
+  border-top: 1px dashed #fff;
+  background: none;
+  height: 0;
+} 
+
+.dotted-line-3 {
+  border: none;
+  border-left: 1.5px dashed #ff0040;
+  background: none;
+  height: 0;
+} 
+
+.dotted-line-4 {
+  border: none;
+  border-left: 1px dashed #100aff;
+  background: none;
+  height: 0.5;
+} 
+
+.first-tag {
+  margin-left: 0;
+}
+
+
