@@ -250,21 +250,30 @@ img.drop-down {
 label {
     cursor: pointer;
     text-shadow: -1.2px 0 #a900ff, -2.5px 0 #100aff;
+}
 
+input[type="radio"]:checked + label {
+  color: #f25597;
+  text-shadow: -1.3px 0 #a900ff;
+}
+
+input[type="checkbox"]:checked + label {
+  color: #f25597;
+  text-shadow: -1.3px 0 #a900ff;
 }
 
 li input[id][type="checkbox"] {
-    position: absolute;
-    left: -1000px;
-    top: -1000px;
+  position: absolute;
+  left: -1000px;
+  top: -1000px;
 }
 
 input[id] ~ div[id] {
-    display: none;
+  display: none;
 }
 
 input[id]:checked ~ div[id] {
-    display: block;
+  display: block;
 }
 
 
