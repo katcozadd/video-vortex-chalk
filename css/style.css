@@ -14,6 +14,7 @@ body {
   background-color: #000; 
 }
 
+
 @media only screen and (max-width: 1440px) {
     body {
         padding: 0 12rem;
@@ -53,7 +54,7 @@ body {
 @media only screen and (max-width: 414px) {
     body {
         padding: 0 2.7rem;
-        font-size: .9rem;
+        font-size: 1.6rem;
     }
 }
 
@@ -243,7 +244,7 @@ input.heading-search.small {
   
   .heading-magnifying-glass-sm {
     visibility: visible;
-    top: 9.9rem;
+    top: 16.5rem;
 
   }
 
@@ -317,7 +318,7 @@ input.heading-search.small {
 
     .heading-search-filter {
       right: 2.9rem;
-      top: 10.2rem;
+      top: 16.7rem;
   }
 
 }
@@ -341,6 +342,13 @@ header {
 .vv-logo {
     width: 18rem;
     padding-bottom: 1.5rem
+}
+
+@media only screen and (max-width: 414px) {
+   .vv-logo {
+      width: 100%;
+}
+
 }
 
 .video-list {
